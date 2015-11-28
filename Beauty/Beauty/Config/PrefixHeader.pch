@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  Kitchen
+//
+//  Created by SoloKM on 15/11/26.
+//  Copyright © 2015年 cornerAnt. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+
+#ifdef DEBUG
+#define Log(...) NSLog(__VA_ARGS__)
+#else
+#define Log(...)
+#endif
+
+#define LogFunc Log(@"%s", __func__)
+
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+
+// 常量
+#import "Const.h"
+
+// 分类
+#import "UIView+Extension.h"
+#import "UIViewController+Extension.h"
+
+
+// 颜色
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]    
+#define RGBAColor(r, g, b ,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]         
+#define RandColor RGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define kGlobalTitleColor RGBColor(31, 170, 155)
+#define kGlobalBg RGBColor(241, 242, 245)
+
+
+#endif /* PrefixHeader_pch */
