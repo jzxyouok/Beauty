@@ -18,4 +18,6 @@
 @interface KMHomeTypeView : UICollectionView
 /** 选择界面代理  */
 @property (nonatomic ,weak) id<KMHomeTypeViewDelegate> TypeViewdelegate;
+/** 数据 */
+@property (nonatomic ,strong) NSArray *types;
 @end

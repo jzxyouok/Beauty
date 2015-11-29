@@ -11,15 +11,54 @@
 #import "KMCarouselView.h"
 #import "KMMefaViewController.h"
 #import "KMHomeTypeView.h"
+#import "KMHomeItem.h"
 @interface KMHomeViewController ()<KMCarouselDelegate,KMHomeTypeViewDelegate>
 
 @property (weak, nonatomic) IBOutlet KMCarouselView *carouselView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @property (weak, nonatomic) IBOutlet KMHomeTypeView *typeView;
+
+/** 数据 */
+@property (nonatomic ,copy) NSArray *types;
 @end
 
 @implementation KMHomeViewController
+- (NSArray *)types
+{
+    if (_types == nil) {
+        
+        KMHomeItem *meifa = [[KMHomeItem alloc] init];
+        meifa.title = @"美发";
+        meifa.image =[UIImage imageNamed:@"main_v3_icon_knife"];
+        meifa.count = @"137款发型";
+        
+        
+        KMHomeItem *meijia= [[KMHomeItem alloc] init];
+        meijia.title = @"美甲";
+        meijia.image =[UIImage imageNamed:@"main_v3_icon_zhijia"];
+        meijia.count = @"777款作品";
+        
+        
+        KMHomeItem *meizhuang = [[KMHomeItem alloc] init];
+        meizhuang.title = @"美妆";
+        meizhuang.image =[UIImage imageNamed:@"main_v3_icon_huazhuang"];
+        meizhuang.count = @"137款美妆";
+        
+        
+        KMHomeItem *meijie = [[KMHomeItem alloc] init];
+        meijie.title = @"美睫";
+        meijie.image =[UIImage imageNamed:@"main_v3_icon_jiemao"];
+        meijie.count = @"14款作品";
+        
+        NSArray *arry = @[meifa,meijie,meizhuang,meijie];
+        
+        _types = [arry copy];
+    }
+    
+    return _types;
+    
+}
 
 
 #pragma mark - 生命周期
@@ -29,9 +68,10 @@
     [self setupCarouselView];
     [self setupPageControl];
     [self setupNav];
+    [self setupTypeView];
+
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.typeView.TypeViewdelegate = self;
 }
 
 
@@ -40,11 +80,17 @@
 {
     return UIStatusBarStyleLightContent;
 }
-
 - (void) setupNav
+
 {
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"main_v3_icon_address" highImage:@"icon_ad" target:self action:@selector(leftBtnClick)];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_v3_icon_logo"]];
-   
+    
+}
+- (void) setupTypeView
+{
+    self.typeView.TypeViewdelegate = self;
+    self.typeView.types = self.types;
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -58,8 +104,11 @@
     [self.carouselView stopMoving];
 }
 
-#pragma mark - 页面跳转
-
+#pragma mark - 按钮点击
+- (void)leftBtnClick
+{
+    LogFunc;
+}
 
  
 #pragma mark - Private Method
@@ -106,25 +155,25 @@
 {
     if (indexPath.item == 0) {
         NSLog(@"美发");
-        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+        KMMefaViewController *vc = [[KMMefaViewController alloc] init];;
                                     
         [self.navigationController pushViewController:vc animated:YES];
     }
     if (indexPath.item == 1) {
         NSLog(@"美甲");
-        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+        KMMefaViewController *vc = [[KMMefaViewController alloc] init];
         
         [self.navigationController pushViewController:vc animated:YES];
     }
     if (indexPath.item == 2) {
         NSLog(@"美妆");
-        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+        KMMefaViewController *vc = [[KMMefaViewController alloc] init];
         
         [self.navigationController pushViewController:vc animated:YES];
     }
     if (indexPath.item == 3) {
         NSLog(@"美睫毛");
-        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+        KMMefaViewController *vc = [[KMMefaViewController alloc] init];
         
         [self.navigationController pushViewController:vc animated:YES];
     }

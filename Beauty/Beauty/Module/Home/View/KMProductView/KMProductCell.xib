@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KMProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="183" height="155"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-4K-bZn">
+                        <rect key="frame" x="0.0" y="0.0" width="183" height="155"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Bf-4K-bZn" secondAttribute="bottom" id="57E-vj-Ynv"/>
+                <constraint firstAttribute="trailing" secondItem="0Bf-4K-bZn" secondAttribute="trailing" id="Ai8-HJ-H19"/>
+                <constraint firstItem="0Bf-4K-bZn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NLY-D6-ZAW"/>
+                <constraint firstItem="0Bf-4K-bZn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ng2-R9-ywW"/>
+            </constraints>
+            <size key="customSize" width="183" height="155"/>
+            <point key="canvasLocation" x="311.5" y="313.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test" width="2560" height="1600"/>
+    </resources>
+</document>
