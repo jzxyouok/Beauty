@@ -8,32 +8,62 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KMProductCell">
-            <rect key="frame" x="0.0" y="0.0" width="183" height="155"/>
+            <rect key="frame" x="0.0" y="0.0" width="208" height="205"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="183" height="155"/>
+                <rect key="frame" x="0.0" y="0.0" width="208" height="205"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-4K-bZn">
-                        <rect key="frame" x="0.0" y="0.0" width="183" height="155"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Demo" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-4K-bZn">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="155"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="155" id="0yj-8c-nVg"/>
+                        </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥720" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VE-x6-HDx">
+                        <rect key="frame" x="156" y="174" width="46.5" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.1215686275" green="0.66666666669999997" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3人已做" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0f-TY-cag">
+                        <rect key="frame" x="10" y="185" width="44" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创意染发" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uG-Xq-MTO">
+                        <rect key="frame" x="10" y="160" width="48" height="14.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="0Bf-4K-bZn" secondAttribute="bottom" id="57E-vj-Ynv"/>
-                <constraint firstAttribute="trailing" secondItem="0Bf-4K-bZn" secondAttribute="trailing" id="Ai8-HJ-H19"/>
-                <constraint firstItem="0Bf-4K-bZn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NLY-D6-ZAW"/>
-                <constraint firstItem="0Bf-4K-bZn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ng2-R9-ywW"/>
+                <constraint firstItem="C0f-TY-cag" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="2fE-rc-p2v"/>
+                <constraint firstAttribute="trailing" secondItem="1VE-x6-HDx" secondAttribute="trailing" constant="5" id="401-1S-fiN"/>
+                <constraint firstItem="8uG-Xq-MTO" firstAttribute="top" secondItem="0Bf-4K-bZn" secondAttribute="bottom" constant="5" id="6pZ-Pi-dt9"/>
+                <constraint firstItem="8uG-Xq-MTO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="MnW-Gp-SnJ"/>
+                <constraint firstAttribute="bottom" secondItem="1VE-x6-HDx" secondAttribute="bottom" constant="10" id="Sek-XB-ex8"/>
+                <constraint firstItem="0Bf-4K-bZn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Upd-eh-uVM"/>
+                <constraint firstAttribute="trailing" secondItem="0Bf-4K-bZn" secondAttribute="trailing" id="ZgY-zk-sj3"/>
+                <constraint firstItem="0Bf-4K-bZn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aZK-Ih-z8a"/>
+                <constraint firstAttribute="bottom" secondItem="C0f-TY-cag" secondAttribute="bottom" constant="5" id="wfp-v4-a4T"/>
             </constraints>
-            <size key="customSize" width="183" height="155"/>
-            <point key="canvasLocation" x="311.5" y="313.5"/>
+            <size key="customSize" width="208" height="220"/>
+            <point key="canvasLocation" x="250" y="236.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="test" width="2560" height="1600"/>
+        <image name="Demo" width="298" height="307"/>
     </resources>
 </document>

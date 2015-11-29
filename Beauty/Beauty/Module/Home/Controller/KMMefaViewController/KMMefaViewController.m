@@ -50,26 +50,35 @@
     // 指定默认现实的控制器
     [self scrollViewDidEndScrollingAnimation:scrollView];
 }
+/**
+ *  添加子控制器
+ */
 - (void)setupChildVcs
 {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize =  CGSizeMake(ScreenW * 0.5 - 3, 150);
-    layout.minimumLineSpacing = 5;
-    layout.minimumInteritemSpacing = 5;
+    layout.itemSize =  CGSizeMake(ScreenW * 0.5 - 2, 200);
+    layout.minimumLineSpacing = 2;
+    layout.minimumInteritemSpacing = 2;
   
     KMProductsViewController *vc = [[KMProductsViewController alloc] initWithCollectionViewLayout:layout];
     [self addChildViewController:vc];
 
-    KMProductsViewController *vc2 = [[KMProductsViewController alloc] initWithCollectionViewLayout:[KMLayoutTools chooseLayoutWithCol:2 height:150 space:2]];
+    KMProductsViewController *vc2 = [[KMProductsViewController alloc] initWithCollectionViewLayout:layout];
     
     [self addChildViewController:vc2];
 }
+/**
+ *  初始化导航条
+ */
 
 - (void) setupNav
 {
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"icon_ad" highImage:@"icon_ad" target:self action:@selector(leftBtnClick)];
 
 }
+/**
+ *  初始化头选择卡
+ */
 - (void) setupHeader{
     NSArray *segmentedArray = @[@"发型",@"设计师"];
    UISegmentedControl *header = [[UISegmentedControl alloc] initWithItems:segmentedArray];
@@ -84,6 +93,9 @@
     self.navigationItem.titleView = self.header;
     [self.header setSelectedSegmentIndex:0];
 }
+/**
+ *  类型选项卡
+ */
 - (void)setupCheckView
 {
     UIView *view = [[UIView alloc] init];
@@ -119,7 +131,7 @@
     
     // 如果控制器的view已经被创建过，就直接返回,避免重复加载
     
-    if (willShowChildVc.isViewLoaded) return;
+//    if (willShowChildVc.isViewLoaded) return;
 
     CGRect frame = scrollView.bounds;
     

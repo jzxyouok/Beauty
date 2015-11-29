@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4004D2CB1C0B38DE0041AF6F /* KMAppointmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4004D2CA1C0B38DE0041AF6F /* KMAppointmentController.m */; };
+		4004D2CD1C0B38EC0041AF6F /* KMAppointmentController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4004D2CC1C0B38EC0041AF6F /* KMAppointmentController.storyboard */; };
 		402628711C09E78100EBE795 /* KMMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402628701C09E78100EBE795 /* KMMineViewController.storyboard */; };
 		402628741C09E81D00EBE795 /* KMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402628731C09E81D00EBE795 /* KMMineViewController.m */; };
 		402628761C09EF1B00EBE795 /* KMHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402628751C09EF1B00EBE795 /* KMHomeViewController.storyboard */; };
@@ -23,6 +25,9 @@
 		409D18F91C0AF00000B5743E /* KMHomeTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409D18F51C0AF00000B5743E /* KMHomeTypeCell.xib */; };
 		409D18FA1C0AF00000B5743E /* KMHomeTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D18F71C0AF00000B5743E /* KMHomeTypeView.m */; };
 		409D18FD1C0AF44D00B5743E /* KMLayoutTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D18FC1C0AF44D00B5743E /* KMLayoutTools.m */; };
+		409D19011C0B207500B5743E /* KMRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D19001C0B207500B5743E /* KMRefreshHeader.m */; };
+		409D19041C0B256400B5743E /* KMRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D19031C0B256400B5743E /* KMRefreshFooter.m */; };
+		409D19111C0B31B300B5743E /* KMDiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409D19101C0B31B300B5743E /* KMDiscoveryController.m */; };
 		40B564E31C09BCBE007E370B /* KMCarouselCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B564DF1C09BCBE007E370B /* KMCarouselCell.m */; };
 		40B564E41C09BCBE007E370B /* KMCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B564E01C09BCBE007E370B /* KMCarouselCell.xib */; };
 		40B564E51C09BCBE007E370B /* KMCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B564E21C09BCBE007E370B /* KMCarouselView.m */; };
@@ -59,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4004D2C91C0B38DE0041AF6F /* KMAppointmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAppointmentController.h; sourceTree = "<group>"; };
+		4004D2CA1C0B38DE0041AF6F /* KMAppointmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAppointmentController.m; sourceTree = "<group>"; };
+		4004D2CC1C0B38EC0041AF6F /* KMAppointmentController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KMAppointmentController.storyboard; sourceTree = "<group>"; };
 		402628701C09E78100EBE795 /* KMMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KMMineViewController.storyboard; sourceTree = "<group>"; };
 		402628721C09E81D00EBE795 /* KMMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMineViewController.h; sourceTree = "<group>"; };
 		402628731C09E81D00EBE795 /* KMMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMineViewController.m; sourceTree = "<group>"; };
@@ -87,6 +95,12 @@
 		409D18F71C0AF00000B5743E /* KMHomeTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHomeTypeView.m; sourceTree = "<group>"; };
 		409D18FB1C0AF44D00B5743E /* KMLayoutTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMLayoutTools.h; path = Beauty/Module/Home/View/KMProductView/KMLayoutTools.h; sourceTree = SOURCE_ROOT; };
 		409D18FC1C0AF44D00B5743E /* KMLayoutTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMLayoutTools.m; path = Beauty/Module/Home/View/KMProductView/KMLayoutTools.m; sourceTree = SOURCE_ROOT; };
+		409D18FF1C0B207500B5743E /* KMRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRefreshHeader.h; sourceTree = "<group>"; };
+		409D19001C0B207500B5743E /* KMRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRefreshHeader.m; sourceTree = "<group>"; };
+		409D19021C0B256400B5743E /* KMRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRefreshFooter.h; sourceTree = "<group>"; };
+		409D19031C0B256400B5743E /* KMRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRefreshFooter.m; sourceTree = "<group>"; };
+		409D190F1C0B31B300B5743E /* KMDiscoveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDiscoveryController.h; sourceTree = "<group>"; };
+		409D19101C0B31B300B5743E /* KMDiscoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDiscoveryController.m; sourceTree = "<group>"; };
 		40B564DE1C09BCBE007E370B /* KMCarouselCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCarouselCell.h; sourceTree = "<group>"; };
 		40B564DF1C09BCBE007E370B /* KMCarouselCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCarouselCell.m; sourceTree = "<group>"; };
 		40B564E01C09BCBE007E370B /* KMCarouselCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMCarouselCell.xib; sourceTree = "<group>"; };
@@ -217,6 +231,60 @@
 			path = KMHomeTypeView;
 			sourceTree = "<group>";
 		};
+		409D18FE1C0B205B00B5743E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				409D18FF1C0B207500B5743E /* KMRefreshHeader.h */,
+				409D19001C0B207500B5743E /* KMRefreshHeader.m */,
+				409D19021C0B256400B5743E /* KMRefreshFooter.h */,
+				409D19031C0B256400B5743E /* KMRefreshFooter.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		409D19051C0B2E2400B5743E /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				409D19061C0B2E2400B5743E /* Controller */,
+				409D19071C0B2E2400B5743E /* Model */,
+				409D19081C0B2E2400B5743E /* View */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		409D19061C0B2E2400B5743E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4004D2C91C0B38DE0041AF6F /* KMAppointmentController.h */,
+				4004D2CA1C0B38DE0041AF6F /* KMAppointmentController.m */,
+				4004D2CC1C0B38EC0041AF6F /* KMAppointmentController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		409D19071C0B2E2400B5743E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		409D19081C0B2E2400B5743E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		409D190E1C0B315B00B5743E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				409D190F1C0B31B300B5743E /* KMDiscoveryController.h */,
+				409D19101C0B31B300B5743E /* KMDiscoveryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		40B564DD1C09BCBE007E370B /* KMCarouselView */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,7 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				40F00E451C09986500DD7B85 /* Home */,
-				40F00E101C098B1C00DD7B85 /* Appointment */,
+				409D19051C0B2E2400B5743E /* Appointment */,
 				40F00E111C098B1C00DD7B85 /* Discovery */,
 				402628691C09E1DF00EBE795 /* Mine */,
 				40F00E241C098C2C00DD7B85 /* Others */,
@@ -301,16 +369,10 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
-		40F00E101C098B1C00DD7B85 /* Appointment */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Appointment;
-			sourceTree = "<group>";
-		};
 		40F00E111C098B1C00DD7B85 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				409D190E1C0B315B00B5743E /* Controller */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
@@ -319,8 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				40F00E251C098C2C00DD7B85 /* Controller */,
-				40F00E261C098C2C00DD7B85 /* Model */,
-				40F00E271C098C2C00DD7B85 /* View */,
+				409D18FE1C0B205B00B5743E /* View */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -334,20 +395,6 @@
 				40F00E2B1C098C4600DD7B85 /* KMNavigationController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		40F00E261C098C2C00DD7B85 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		40F00E271C098C2C00DD7B85 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		40F00E2E1C098CDF00DD7B85 /* Config */ = {
@@ -573,6 +620,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4004D2CD1C0B38EC0041AF6F /* KMAppointmentController.storyboard in Resources */,
 				40F00DE11C0989CC00DD7B85 /* Assets.xcassets in Resources */,
 				40B564E41C09BCBE007E370B /* KMCarouselCell.xib in Resources */,
 				402628711C09E78100EBE795 /* KMMineViewController.storyboard in Resources */,
@@ -637,9 +685,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				409D18D91C0AD32300B5743E /* UITextField+Extension.m in Sources */,
+				409D19111C0B31B300B5743E /* KMDiscoveryController.m in Sources */,
 				40B564E51C09BCBE007E370B /* KMCarouselView.m in Sources */,
 				409D18FD1C0AF44D00B5743E /* KMLayoutTools.m in Sources */,
+				4004D2CB1C0B38DE0041AF6F /* KMAppointmentController.m in Sources */,
 				40F00E3B1C098CDF00DD7B85 /* UIView+Extension.m in Sources */,
+				409D19011C0B207500B5743E /* KMRefreshHeader.m in Sources */,
 				409D18D31C0AD25700B5743E /* UIImage+Extension.m in Sources */,
 				40F00E5E1C09A0AF00DD7B85 /* KMHomeItem.m in Sources */,
 				40F00E4C1C09986500DD7B85 /* KMHomeViewController.m in Sources */,
@@ -653,6 +704,7 @@
 				40F00DD61C0989CC00DD7B85 /* main.m in Sources */,
 				40F00E3C1C098CDF00DD7B85 /* Const.m in Sources */,
 				409D18FA1C0AF00000B5743E /* KMHomeTypeView.m in Sources */,
+				409D19041C0B256400B5743E /* KMRefreshFooter.m in Sources */,
 				409D18D01C0AD20F00B5743E /* UIBarButtonItem+Extension.m in Sources */,
 				409D18DC1C0AD36F00B5743E /* NSDate+Extension.m in Sources */,
 				409D18E11C0AE5D100B5743E /* KMMefaViewController.m in Sources */,

@@ -10,6 +10,8 @@
 #import "KMNavigationController.h"
 #import "KMHomeViewController.h"
 #import "KMMineViewController.h"
+#import "KMDiscoveryController.h"
+#import "KMAppointmentController.h"
 @interface KMTabBarController ()
 
 @end
@@ -53,10 +55,13 @@
     
     [self setupChildVc:[KMHomeViewController loadFormSb] title:@"首页" image:@"tab_home" selectedImage:@"tab_home_sel"];
     
-    [self setupChildVc:[[UIViewController alloc] init] title:@"约会" image:@"tab_appointment" selectedImage:@"tab_appointment_sel"];
+    [self setupChildVc:[KMAppointmentController loadFormSb]  title:@"约会" image:@"tab_appointment" selectedImage:@"tab_appointment_sel"];
     
-    
-    [self setupChildVc:[[UIViewController alloc] init] title:@"发现" image:@"tab_discovery" selectedImage:@"tab_discovery_sel"];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize =  CGSizeMake(ScreenW * 0.5 - 2, 200);
+    layout.minimumLineSpacing = 2;
+    layout.minimumInteritemSpacing = 2;
+    [self setupChildVc:[[KMDiscoveryController alloc] initWithCollectionViewLayout:layout] title:@"发现" image:@"tab_discovery" selectedImage:@"tab_discovery_sel"];
   
     [self setupChildVc:[KMMineViewController loadFormSb] title:@"我" image:@"tab_mine" selectedImage:@"tab_mine_sel"];
 }
