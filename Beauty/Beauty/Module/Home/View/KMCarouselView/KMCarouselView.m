@@ -138,11 +138,11 @@ NSString *const cellID = @"KMCarouselCell";
     
     if (![self.imageURLs count])
     {
-        [cell.imagView setImage:self.placeholder];
+        [cell.imagView setImage:self.placeholderImage];
         return cell;
     }
     
-    [cell.imagView sd_setImageWithURL:[self.imageURLs objectAtIndex:indexPath.item] placeholderImage:self.placeholder];
+    [cell.imagView sd_setImageWithURL:[self.imageURLs objectAtIndex:indexPath.item] placeholderImage:self.placeholderImage];
     return cell;
 }
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hAU-40-72f">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Mine View Controller-->
+        <scene sceneID="0aX-Jo-EFK">
+            <objects>
+                <viewController id="hAU-40-72f" customClass="KMMineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xAg-pD-jKH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pz6-gH-06e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rYe-e2-IlB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sjo-HW-Ljn">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sjo-HW-Ljn" firstAttribute="top" secondItem="xAg-pD-jKH" secondAttribute="bottom" id="GBe-F9-hab"/>
+                            <constraint firstItem="Sjo-HW-Ljn" firstAttribute="leading" secondItem="rYe-e2-IlB" secondAttribute="leading" id="cs5-iY-GmL"/>
+                            <constraint firstItem="Pz6-gH-06e" firstAttribute="top" secondItem="Sjo-HW-Ljn" secondAttribute="bottom" id="fB1-AS-QoM"/>
+                            <constraint firstAttribute="trailing" secondItem="Sjo-HW-Ljn" secondAttribute="trailing" id="ifj-iN-LHG"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCJ-AL-pnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="306"/>
+        </scene>
+    </scenes>
+</document>

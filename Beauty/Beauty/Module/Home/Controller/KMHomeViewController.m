@@ -5,19 +5,36 @@
 //  Created by SoloKM on 15/11/28.
 //  Copyright © 2015年 cornerAnt. All rights reserved.
 //
-#define IMAGE_URLSTRING0  @"http://pic.58pic.com/58pic/13/18/14/87m58PICVvM_1024.jpg"
-#define IMAGE_URLSTRING1  @"http://pic.58pic.com/58pic/13/56/99/88f58PICuBh_1024.jpg"
-#define PLACEHOLDER_IMAGE [UIImage imageNamed:@"placeholder"]
+
+
 #import "KMHomeViewController.h"
 #import "KMCarouselView.h"
-@interface KMHomeViewController ()<KMCarouselDelegate>
+#import "KMMefaViewController.h"
+#import "KMHomeTypeView.h"
+@interface KMHomeViewController ()<KMCarouselDelegate,KMHomeTypeViewDelegate>
 
 @property (weak, nonatomic) IBOutlet KMCarouselView *carouselView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
+@property (weak, nonatomic) IBOutlet KMHomeTypeView *typeView;
 @end
 
 @implementation KMHomeViewController
+
+
+#pragma mark - 生命周期
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self setupCarouselView];
+    [self setupPageControl];
+    [self setupNav];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.typeView.TypeViewdelegate = self;
+}
+
+
 
 -(UIStatusBarStyle)preferredStatusBarStyle
 {
@@ -27,16 +44,8 @@
 - (void) setupNav
 {
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_v3_icon_logo"]];
+   
 }
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    [self setupCarouselView];
-    [self setupPageControl];
-    [self setupNav];
-    
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -49,31 +58,38 @@
     [self.carouselView stopMoving];
 }
 
+#pragma mark - 页面跳转
+
+
+ 
 #pragma mark - Private Method
 
 - (void)setupCarouselView
 {
     self.carouselView.imageURLs = [self imageURLs];
-    self.carouselView.placeholder = PLACEHOLDER_IMAGE;
+    self.carouselView.placeholderImage = [UIImage imageNamed:@"main_v3_icon_loadding_default"];
     self.carouselView.pageDelegate = self;
     self.carouselView.autoMoving = YES;
-    self.carouselView.movingTimeInterval = 1.5f;
+    self.carouselView.movingTimeInterval = 2.0f;
+    
 }
 
 - (void)setupPageControl
 {
     self.pageControl.numberOfPages = [[self imageURLs] count];
-    self.pageControl.tintColor = kGlobalTitleColor;
+    self.pageControl.pageIndicatorTintColor  = kGlobalTitleColor;
     
 }
 
 - (NSArray *)imageURLs
 {
-    return @[[NSURL URLWithString:IMAGE_URLSTRING0],
-             [NSURL URLWithString:IMAGE_URLSTRING1]];
+    NSString *image1 = @"http://tupian.enterdesk.com/2015/gha/11/2705/02.jpg";
+    NSString *image2 =@"http://d.hiphotos.baidu.com/zhidao/pic/item/c83d70cf3bc79f3ddbb74c91bba1cd11728b2938.jpg";
+    return @[[NSURL URLWithString:image1],
+             [NSURL URLWithString:image2]];
 }
 
-#pragma mark - PSCarouselDelegate
+#pragma mark - KMCarouselDelegate
 
 - (void)carousel:(KMCarouselView *)carousel didMoveToPage:(NSUInteger)page
 {
@@ -84,5 +100,33 @@
 - (void)carousel:(KMCarouselView *)carousel didTouchPage:(NSUInteger)page
 {
     self.pageControl.currentPage = page;
+}
+#pragma mark - KMHomeTypeViewDelegate
+- (void)typeView:(KMHomeTypeView *)typeView chooseType:(NSIndexPath *)indexPath
+{
+    if (indexPath.item == 0) {
+        NSLog(@"美发");
+        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+                                    
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.item == 1) {
+        NSLog(@"美甲");
+        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.item == 2) {
+        NSLog(@"美妆");
+        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.item == 3) {
+        NSLog(@"美睫毛");
+        KMMefaViewController *vc = [KMMefaViewController loadFormSb];
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 @end

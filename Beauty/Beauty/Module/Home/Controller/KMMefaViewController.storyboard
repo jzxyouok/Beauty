@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QFc-IE-GgG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Mefa View Controller-->
+        <scene sceneID="Ff8-Gz-q1I">
+            <objects>
+                <viewController id="QFc-IE-GgG" customClass="KMMefaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nYX-1g-ul0"/>
+                        <viewControllerLayoutGuide type="bottom" id="hr1-dI-sna"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2f6-pC-xY8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s06-ty-WMy" userLabel="导航条">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="eUa-W9-Ztk"/>
+                                </constraints>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHS-j6-8Bw" userLabel="选项卡">
+                                <rect key="frame" x="0.0" y="56" width="320" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UZp-LJ-ZTZ"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aFR-Gu-zzI" userLabel="子控制器容器">
+                                <rect key="frame" x="0.0" y="108" width="320" height="492"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X2w-eU-6At">
+                                <rect key="frame" x="110" y="20" width="100" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="FrT-LZ-GUL"/>
+                                    <constraint firstAttribute="width" constant="100" id="Tau-7S-IIW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-1Q-JCh">
+                                <rect key="frame" x="255" y="19" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="价格表"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR6-Hi-MVT">
+                                <rect key="frame" x="20" y="19" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AGX-1Q-JCh" firstAttribute="centerY" secondItem="X2w-eU-6At" secondAttribute="centerY" id="1nm-af-a1O"/>
+                            <constraint firstItem="aFR-Gu-zzI" firstAttribute="top" secondItem="XHS-j6-8Bw" secondAttribute="bottom" id="4i5-Pz-W9C"/>
+                            <constraint firstItem="RR6-Hi-MVT" firstAttribute="centerY" secondItem="X2w-eU-6At" secondAttribute="centerY" id="Cuy-KF-DwG"/>
+                            <constraint firstItem="RR6-Hi-MVT" firstAttribute="leading" secondItem="2f6-pC-xY8" secondAttribute="leading" constant="20" id="DDV-cb-YSJ"/>
+                            <constraint firstAttribute="trailing" secondItem="aFR-Gu-zzI" secondAttribute="trailing" id="KXG-km-St7"/>
+                            <constraint firstAttribute="trailing" secondItem="s06-ty-WMy" secondAttribute="trailing" id="OWa-pp-aWG"/>
+                            <constraint firstItem="aFR-Gu-zzI" firstAttribute="leading" secondItem="2f6-pC-xY8" secondAttribute="leading" id="VDY-rK-zja"/>
+                            <constraint firstAttribute="trailing" secondItem="XHS-j6-8Bw" secondAttribute="trailing" id="Wea-5U-Nfi"/>
+                            <constraint firstItem="s06-ty-WMy" firstAttribute="top" secondItem="2f6-pC-xY8" secondAttribute="top" id="Ydm-gD-TFs"/>
+                            <constraint firstItem="X2w-eU-6At" firstAttribute="centerX" secondItem="2f6-pC-xY8" secondAttribute="centerX" id="ZBT-4I-wok"/>
+                            <constraint firstAttribute="trailing" secondItem="AGX-1Q-JCh" secondAttribute="trailing" constant="20" id="iOv-vs-jDO"/>
+                            <constraint firstItem="hr1-dI-sna" firstAttribute="top" secondItem="aFR-Gu-zzI" secondAttribute="bottom" id="oH4-yk-O3x"/>
+                            <constraint firstItem="XHS-j6-8Bw" firstAttribute="top" secondItem="s06-ty-WMy" secondAttribute="bottom" id="pjL-n2-CaT"/>
+                            <constraint firstItem="X2w-eU-6At" firstAttribute="top" secondItem="nYX-1g-ul0" secondAttribute="bottom" id="qfC-5c-uQQ"/>
+                            <constraint firstItem="XHS-j6-8Bw" firstAttribute="leading" secondItem="2f6-pC-xY8" secondAttribute="leading" id="tIp-Mp-nGG"/>
+                            <constraint firstItem="s06-ty-WMy" firstAttribute="leading" secondItem="2f6-pC-xY8" secondAttribute="leading" id="wgj-BK-vr8"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="jsK-3w-fQf"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLb-ar-FAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="320"/>
+        </scene>
+    </scenes>
+</document>

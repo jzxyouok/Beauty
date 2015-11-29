@@ -12,7 +12,9 @@
 /** 标题 */
 @property (nonatomic ,copy) NSString *title;
 /** 标题 */
-@property (nonatomic ,copy) NSString *image;
+@property (nonatomic ,weak) UIImage *image;
 /** 标题 */
-@property (nonatomic ,assign) NSInteger *count;
+@property (nonatomic ,copy) NSString *count;
+
+
 @end

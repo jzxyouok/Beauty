@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402628271C09DD9700EBE795 /* KMMefaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402628261C09DD9700EBE795 /* KMMefaViewController.m */; };
+		402628291C09DDC600EBE795 /* KMMefaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402628281C09DDC600EBE795 /* KMMefaViewController.storyboard */; };
+		402628711C09E78100EBE795 /* KMMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402628701C09E78100EBE795 /* KMMineViewController.storyboard */; };
+		402628741C09E81D00EBE795 /* KMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402628731C09E81D00EBE795 /* KMMineViewController.m */; };
+		402628761C09EF1B00EBE795 /* KMHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402628751C09EF1B00EBE795 /* KMHomeViewController.storyboard */; };
+		4026287D1C09F13800EBE795 /* KMHomeTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4026287C1C09F13800EBE795 /* KMHomeTypeCell.m */; };
+		4026287F1C09F33100EBE795 /* KMHomeTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4026287E1C09F33100EBE795 /* KMHomeTypeCell.xib */; };
+		402628851C09F98400EBE795 /* KMHomeTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 402628841C09F98400EBE795 /* KMHomeTypeView.m */; };
 		40B564E31C09BCBE007E370B /* KMCarouselCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B564DF1C09BCBE007E370B /* KMCarouselCell.m */; };
 		40B564E41C09BCBE007E370B /* KMCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B564E01C09BCBE007E370B /* KMCarouselCell.xib */; };
 		40B564E51C09BCBE007E370B /* KMCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B564E21C09BCBE007E370B /* KMCarouselView.m */; };
@@ -21,7 +29,6 @@
 		40F00E3C1C098CDF00DD7B85 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F00E361C098CDF00DD7B85 /* Const.m */; };
 		40F00E3F1C0991E000DD7B85 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F00E3E1C0991E000DD7B85 /* UIViewController+Extension.m */; };
 		40F00E4C1C09986500DD7B85 /* KMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F00E481C09986500DD7B85 /* KMHomeViewController.m */; };
-		40F00E4D1C09986500DD7B85 /* KMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F00E491C09986500DD7B85 /* KMHomeViewController.xib */; };
 		40F00E5E1C09A0AF00DD7B85 /* KMHomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F00E5D1C09A0AF00DD7B85 /* KMHomeItem.m */; };
 		521287CD33D2A01273A414C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4453766C2704E1453A1C353E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -44,6 +51,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		402628251C09DD9700EBE795 /* KMMefaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMefaViewController.h; sourceTree = "<group>"; };
+		402628261C09DD9700EBE795 /* KMMefaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMefaViewController.m; sourceTree = "<group>"; };
+		402628281C09DDC600EBE795 /* KMMefaViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KMMefaViewController.storyboard; sourceTree = "<group>"; };
+		402628701C09E78100EBE795 /* KMMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KMMineViewController.storyboard; sourceTree = "<group>"; };
+		402628721C09E81D00EBE795 /* KMMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMineViewController.h; sourceTree = "<group>"; };
+		402628731C09E81D00EBE795 /* KMMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMineViewController.m; sourceTree = "<group>"; };
+		402628751C09EF1B00EBE795 /* KMHomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KMHomeViewController.storyboard; sourceTree = "<group>"; };
+		4026287B1C09F13800EBE795 /* KMHomeTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHomeTypeCell.h; sourceTree = "<group>"; };
+		4026287C1C09F13800EBE795 /* KMHomeTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHomeTypeCell.m; sourceTree = "<group>"; };
+		4026287E1C09F33100EBE795 /* KMHomeTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMHomeTypeCell.xib; sourceTree = "<group>"; };
+		402628831C09F98400EBE795 /* KMHomeTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHomeTypeView.h; sourceTree = "<group>"; };
+		402628841C09F98400EBE795 /* KMHomeTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHomeTypeView.m; sourceTree = "<group>"; };
 		40B564DE1C09BCBE007E370B /* KMCarouselCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMCarouselCell.h; sourceTree = "<group>"; };
 		40B564DF1C09BCBE007E370B /* KMCarouselCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMCarouselCell.m; sourceTree = "<group>"; };
 		40B564E01C09BCBE007E370B /* KMCarouselCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMCarouselCell.xib; sourceTree = "<group>"; };
@@ -74,7 +93,6 @@
 		40F00E3E1C0991E000DD7B85 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		40F00E471C09986500DD7B85 /* KMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHomeViewController.h; sourceTree = "<group>"; };
 		40F00E481C09986500DD7B85 /* KMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHomeViewController.m; sourceTree = "<group>"; };
-		40F00E491C09986500DD7B85 /* KMHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMHomeViewController.xib; sourceTree = "<group>"; };
 		40F00E5C1C09A0AF00DD7B85 /* KMHomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMHomeItem.h; sourceTree = "<group>"; };
 		40F00E5D1C09A0AF00DD7B85 /* KMHomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMHomeItem.m; sourceTree = "<group>"; };
 		4164AD4F607914688296C41A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +126,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402628691C09E1DF00EBE795 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				4026286A1C09E1DF00EBE795 /* Controller */,
+				4026286B1C09E1DF00EBE795 /* Model */,
+				4026286C1C09E1DF00EBE795 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		4026286A1C09E1DF00EBE795 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				402628701C09E78100EBE795 /* KMMineViewController.storyboard */,
+				402628721C09E81D00EBE795 /* KMMineViewController.h */,
+				402628731C09E81D00EBE795 /* KMMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4026286B1C09E1DF00EBE795 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4026286C1C09E1DF00EBE795 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4026287A1C09F10C00EBE795 /* KMHomeTypeView */ = {
+			isa = PBXGroup;
+			children = (
+				4026287B1C09F13800EBE795 /* KMHomeTypeCell.h */,
+				4026287C1C09F13800EBE795 /* KMHomeTypeCell.m */,
+				4026287E1C09F33100EBE795 /* KMHomeTypeCell.xib */,
+				402628831C09F98400EBE795 /* KMHomeTypeView.h */,
+				402628841C09F98400EBE795 /* KMHomeTypeView.m */,
+			);
+			name = KMHomeTypeView;
+			path = KMHomeTypeCell;
+			sourceTree = "<group>";
+		};
 		40B564DD1C09BCBE007E370B /* KMCarouselView */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +251,7 @@
 				40F00E451C09986500DD7B85 /* Home */,
 				40F00E101C098B1C00DD7B85 /* Appointment */,
 				40F00E111C098B1C00DD7B85 /* Discovery */,
-				40F00E131C098B1C00DD7B85 /* Mine */,
+				402628691C09E1DF00EBE795 /* Mine */,
 				40F00E241C098C2C00DD7B85 /* Others */,
 			);
 			path = Module;
@@ -204,13 +269,6 @@
 			children = (
 			);
 			path = Discovery;
-			sourceTree = "<group>";
-		};
-		40F00E131C098B1C00DD7B85 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
 			sourceTree = "<group>";
 		};
 		40F00E241C098C2C00DD7B85 /* Others */ = {
@@ -311,7 +369,10 @@
 			children = (
 				40F00E471C09986500DD7B85 /* KMHomeViewController.h */,
 				40F00E481C09986500DD7B85 /* KMHomeViewController.m */,
-				40F00E491C09986500DD7B85 /* KMHomeViewController.xib */,
+				402628751C09EF1B00EBE795 /* KMHomeViewController.storyboard */,
+				402628251C09DD9700EBE795 /* KMMefaViewController.h */,
+				402628261C09DD9700EBE795 /* KMMefaViewController.m */,
+				402628281C09DDC600EBE795 /* KMMefaViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -328,6 +389,7 @@
 		40F00E4B1C09986500DD7B85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4026287A1C09F10C00EBE795 /* KMHomeTypeView */,
 				40B564DD1C09BCBE007E370B /* KMCarouselView */,
 			);
 			path = View;
@@ -458,7 +520,10 @@
 			files = (
 				40F00DE11C0989CC00DD7B85 /* Assets.xcassets in Resources */,
 				40B564E41C09BCBE007E370B /* KMCarouselCell.xib in Resources */,
-				40F00E4D1C09986500DD7B85 /* KMHomeViewController.xib in Resources */,
+				402628711C09E78100EBE795 /* KMMineViewController.storyboard in Resources */,
+				402628291C09DDC600EBE795 /* KMMefaViewController.storyboard in Resources */,
+				4026287F1C09F33100EBE795 /* KMHomeTypeCell.xib in Resources */,
+				402628761C09EF1B00EBE795 /* KMHomeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,9 +587,13 @@
 				40F00E4C1C09986500DD7B85 /* KMHomeViewController.m in Sources */,
 				40F00E3A1C098CDF00DD7B85 /* AppDelegate.m in Sources */,
 				40B564E31C09BCBE007E370B /* KMCarouselCell.m in Sources */,
+				4026287D1C09F13800EBE795 /* KMHomeTypeCell.m in Sources */,
 				40F00E3F1C0991E000DD7B85 /* UIViewController+Extension.m in Sources */,
+				402628851C09F98400EBE795 /* KMHomeTypeView.m in Sources */,
+				402628741C09E81D00EBE795 /* KMMineViewController.m in Sources */,
 				40F00DD61C0989CC00DD7B85 /* main.m in Sources */,
 				40F00E3C1C098CDF00DD7B85 /* Const.m in Sources */,
+				402628271C09DD9700EBE795 /* KMMefaViewController.m in Sources */,
 				40F00E2C1C098C4600DD7B85 /* KMTabBarController.m in Sources */,
 				40F00E2D1C098C4600DD7B85 /* KMNavigationController.m in Sources */,
 			);

@@ -9,6 +9,7 @@
 #import "KMTabBarController.h"
 #import "KMNavigationController.h"
 #import "KMHomeViewController.h"
+#import "KMMineViewController.h"
 @interface KMTabBarController ()
 
 @end
@@ -50,14 +51,14 @@
 {
     self.tabBar.backgroundImage = [self ImageFromColor:[UIColor blackColor]];
     
-    [self setupChildVc:[[KMHomeViewController alloc] init] title:@"首页" image:@"tab_home" selectedImage:@"tab_home_sel"];
+    [self setupChildVc:[KMHomeViewController loadFormSb] title:@"首页" image:@"tab_home" selectedImage:@"tab_home_sel"];
     
     [self setupChildVc:[[UIViewController alloc] init] title:@"约会" image:@"tab_appointment" selectedImage:@"tab_appointment_sel"];
     
     
     [self setupChildVc:[[UIViewController alloc] init] title:@"发现" image:@"tab_discovery" selectedImage:@"tab_discovery_sel"];
   
-    [self setupChildVc:[[UIViewController alloc] init] title:@"我" image:@"tab_mine" selectedImage:@"tab_mine_sel"];
+    [self setupChildVc:[KMMineViewController loadFormSb] title:@"我" image:@"tab_mine" selectedImage:@"tab_mine_sel"];
 }
 
 /**
@@ -71,8 +72,9 @@
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
+   
     KMNavigationController *nav = [[KMNavigationController alloc] initWithRootViewController:vc];
-    [self addChildViewController:nav];
+        [self addChildViewController:nav];
     
 }
 - (UIImage *)ImageFromColor:(UIColor *)color{
